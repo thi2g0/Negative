@@ -1,0 +1,59 @@
+.menu{
+	background: none;
+	position: absolute;
+	left: 50%;
+	top: 5%;
+	transform: translate(-50%);
+	width: 100%;
+	text-align: center;
+}
+
+.menu li{
+	display: inline;
+}
+
+.menu a{
+	font-family: Arca;
+	color: #fff;
+	font-size: 16px;
+	opacity: .8;
+	transition: ease .3s;
+	padding: 10px 35px;
+}
+
+.menu a:hover{
+	color: white;
+	text-shadow: 1px 1px 15px #fff;
+	opacity: 1;
+}
+
+.menu .iconeMenu{
+	color: #e84118;
+}
+
+
+.login{
+	background: none;
+	position: absolute;
+	top: 5%;
+	right: 0;
+	width: 20%;
+	text-align: right;
+}
+.iconeLogin{
+	color: white;
+}
+
+
+
+/* NÃO DEIXA BORDAR AZUL EM INPUT OU OUTROS QUE SÃO ACESSÍVEIS*/
+textarea:focus,
+input:focus,
+button:focus,
+select:focus {
+border-color: none !important;
+outline: 0;
+-webkit-box-shadow: none !important;
+box-shadow: none !important;
+}
+

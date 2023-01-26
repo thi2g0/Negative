@@ -1,0 +1,172 @@
+/* CONFIGURANDO A PÁGINA */
+*{
+	margin:0;
+	padding:0;
+}
+
+a:link{
+	text-decoration: none;
+}
+
+body{
+	background: url(../IMG/Favoritos.jpg) no-repeat center fixed; /* PLANO DE FUNDO COM IMAGEM RESPONSIVO */
+	-webkit-background-size:cover; /* GOOGLE CHROME */
+	-moz-background-size:cover; /* MOZILLA */
+	-o-background-size:cover; /* OPERA */
+	background:cover; /* EM GERAL */
+	width:100%; /* LARGURA DA TELA TODA */
+	height:auto; /* ALTURA */
+	font-family: Harmonia;	
+}
+
+.topo{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to bottom, rgba(255,0,0,0) 0%,rgba(34,31,59,1) 100%);
+	/*background: #221f3b;*/}
+
+.nome{
+	font-family: Arca;	
+	color: white;
+	position: absolute;
+	top: 5%;
+	font-size: 20px;
+	left: 8%;
+	transform: translate(-50%,-50%);
+}
+
+.pesquisa{
+	width: 70%;
+	height: 50px;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%);
+}
+
+.pesquisa label{
+	color: #e84118;
+	font-size: 26px;	
+	position: absolute;
+	z-index: 1;
+	left: 10px;
+	top: 10px;
+}
+
+.pesquisa input{
+	width: 100%;
+	background: rgba(255,255,255,0.9);
+	opacity: .7;
+	padding-left: 50px;
+	font-size: 15px;
+	color: #000;
+	transition: .3s;
+	text-transform: uppercase;
+	border:none;
+	border-radius: 5px;
+	height: 50px;
+	font-family: Arca;
+}
+
+.pesquisa input:focus{
+	opacity: 1;
+}
+
+
+
+/* BOTÃO DO FILME */
+.filme{
+	width: 100%;
+	background: none;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+	bottom: 30%;
+}
+
+.filme span{
+	color: #e84118;
+	opacity: 0;
+}
+
+.filme button{
+	border: none;
+	font-family: Calibri;
+	font-weight: bolder;
+	border-radius: 10px;
+	font-style: italic;
+	font-size: 20px;
+	padding: 15px 45px;
+	background: none;
+	color: #fff;
+	transition: .2s;
+}
+
+.filme .b1{
+	margin-left: 20%;	
+}
+
+.filme .b1:hover span{
+	opacity: 1;
+}
+
+.filme .b1:hover,
+.filme .b2:hover{
+	background: rgba(255,255,255,0.2);
+}
+
+
+.filme .b2:hover span{
+	opacity: 1;
+}
+
+
+
+
+/* RODAPE */
+
+.rodape{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 60px;
+	font-size: 12px;
+	background: none;
+	text-align: center;
+}
+
+.copy{
+	color: white;
+}
+
+.sla{
+	color: #b2bec3;
+}
+
+.redes{
+	text-align: right;
+	position: absolute;
+	color: white;
+	right: 20px;
+	cursor: pointer;
+	bottom: 20px;
+	font-size: 20px;
+}
+
+.redes span{
+	margin-left: 30px;
+}
+
+
+/* NÃO DEIXA BORDAR AZUL EM INPUT OU OUTROS QUE SÃO ACESSÍVEIS*/
+textarea:focus,
+input:focus,
+button:focus,
+select:focus {
+border-color: none !important;
+outline: 0;
+-webkit-box-shadow: none !important;
+box-shadow: none !important;
+}
